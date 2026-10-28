@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment - Career Path Selection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🎓 Career Path Selection</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assessment.html" class="active">Assessment</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="career-details.html">Career Details</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <section class="assessment-header">
+    <div class="container">
+      <div class="header-text">
+        <span id="step-badge" class="step-badge">Step 1 of 10</span>
+        <h1>Career Assessment</h1>
+        <p>
+          Answer a few simple questions about your interests, skills and
+          preferences. It will help us find career paths you can explore.
+        </p>
+      </div>
+      <div class="header-art"></div>
+    </div>
+  </section>
+
+  <div class="container assessment-layout">
+
+  
+    <section class="card question-panel">
+
+      <div class="progress-row">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="progress-text" class="progress-text">1 / 10</span>
+      </div>
+
+      <div class="question-head">
+        <div id="question-icon" class="question-icon"></div>
+        <div>
+          <h2 id="question-title"></h2>
+          <p class="card-small-text">Choose the option that feels most comfortable for you.</p>
+        </div>
+      </div>
+
+      <div id="options"></div>
+
+      <p id="error-message" class="error-message"></p>
+
+      <div class="nav-buttons">
+        <button type="button" id="prev-button" class="btn btn-secondary">← Previous</button>
+        <button type="button" id="next-button" class="btn">Next →</button>
+      </div>
+
+    </section>
+
+   
+    <aside class="tips-panel">
+      <h3>Quick Tips</h3>
+      <ul class="tips-list">
+        <li>There are no right or wrong answers.</li>
+        <li>Choose what feels natural to you.</li>
+        <li>Be honest about your interests and preferences.</li>
+        <li>You can always retake the assessment later.</li>
+      </ul>
+
+      <p class="quote-box">Your career is not just a job, it is a part of who you are.</p>
+      <p class="keep-going">Keep going!</p>
+    </aside>
+
+  </div>
+
+  <footer class="footer">
+    <p>Career Path Selection System - College Team Project</p>
+  </footer>
+
+  <script src="js/assessment.js"></script>
+</body>
+</html>
