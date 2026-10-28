@@ -1,6 +1,6 @@
 # Career Path Selection System
 
-A college team project that helps students explore career fields by
+A team project that helps students explore career fields by
 answering a short questionnaire. The website suggests careers using simple
 JavaScript scoring (it does not use AI or machine learning).
 
