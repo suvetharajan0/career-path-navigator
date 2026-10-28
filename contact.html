@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Career Path Selection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🎓 Career Path Selection</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="career-details.html">Career Details</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="section-title">Contact Us</h1>
+
+    <div class="card">
+      <h2>Contact Information</h2>
+     
+      <p>Team: Spirex Foundation Team 2</p>
+      <p>Email: team2-email@example.com</p>
+    </div>
+
+    <div class="card">
+      <h2>Feedback Form</h2>
+      <form id="feedback-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email">
+
+        <label for="message">Your Feedback</label>
+        <textarea id="message"></textarea>
+
+        <p id="form-message"></p>
+        <button type="submit" class="btn">Send Feedback</button>
+      </form>
+      <p class="note-text">
+        Demo only: this form checks your input, but the message is not sent
+        anywhere because this project has no backend.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Career Path Selection System - College Team Project</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("feedback-form");
+    const formMessage = document.getElementById("form-message");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      formMessage.className = "error-message";
+
+      if (name === "" || email === "" || message === "") {
+        formMessage.textContent = "Please fill in all the fields.";
+        return;
+      }
+
+      if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+        formMessage.textContent = "Please enter a valid email address.";
+        return;
+      }
+
+      formMessage.className = "success-message";
+      formMessage.textContent = "Thank you, " + name + "! Your feedback has been recorded in this demo.";
+      form.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Details - Career Path Selection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🎓 Career Path Selection</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="career-details.html" class="active">Career Details</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="section-title">Career Details</h1>
+
+    <p>Choose a career field to read about it.</p>
+
+    
+    <div id="career-buttons" class="button-row"></div>
+
+    <p id="pick-message" class="card-small-text" style="margin-top: 20px;">
+      No career selected yet. Click one of the buttons above, or
+      <a href="assessment.html">take the assessment</a> to get a recommendation.
+    </p>
+
+   
+    <div id="career-content" hidden style="margin-top: 20px;">
+
+      <div class="card">
+        <h2 id="career-name"></h2>
+        <p id="career-overview"></p>
+      </div>
+
+      <div class="card">
+        <h3>Required Skills</h3>
+        <ul id="skills-list"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Beginner Learning Roadmap</h3>
+        <ol id="roadmap-list"></ol>
+      </div>
+
+      <div class="card">
+        <h3>Possible Entry-Level Job Roles</h3>
+        <ul id="jobs-list"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Example Projects You Can Build</h3>
+        <ul id="projects-list"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Suggested Next Steps</h3>
+        <ul id="nextsteps-list"></ul>
+      </div>
+
+      <p class="note-text">
+        This information is general guidance for beginners. Job titles and
+        requirements can be different in different companies.
+      </p>
+
+    </div>
+
+    <div class="button-row">
+      <a href="recommendations.html" class="btn btn-secondary">Back to Recommendations</a>
+      <a href="assessment.html" class="btn btn-secondary">Retake Assessment</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Career Path Selection System - College Team Project</p>
+  </footer>
+
+  <script src="js/career-details.js"></script>
+</body>
+</html>

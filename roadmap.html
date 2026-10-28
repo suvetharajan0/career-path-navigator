@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Roadmap - Career Path Selection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🎓 Career Path Selection</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="recommendations.html" class="active">Recommendations</a></li>
+        <li><a href="career-details.html">Career Details</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="section-title">Learning Roadmap</h1>
+    <p>Choose a career field to see a step-by-step beginner roadmap. Follow the steps in order, but go at your own pace.</p>
+
+   
+    <div id="career-buttons" class="button-row"></div>
+
+    <p id="pick-message" class="card-small-text" style="margin-top: 20px;">
+      No career selected yet. Click one of the buttons above, or
+      <a href="assessment.html">take the assessment</a> to get a recommendation.
+    </p>
+
+   
+    <div id="roadmap-content" hidden style="margin-top: 20px;">
+      <h2 id="career-name" class="section-title"></h2>
+
+     
+      <div id="steps"></div>
+
+      <p class="note-text">
+        This roadmap is general guidance for beginners. You can change the
+        order or speed to suit your own learning.
+      </p>
+    </div>
+
+    <div class="button-row">
+      <a href="career-details.html" class="btn">View Career Details</a>
+      <a href="recommendations.html" class="btn btn-secondary">Back to Recommendations</a>
+      <a href="assessment.html" class="btn btn-secondary">Retake Assessment</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Career Path Selection System - College Team Project</p>
+  </footer>
+
+  <script src="js/roadmap.js"></script>
+</body>
+</html>
