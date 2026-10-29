@@ -7,7 +7,7 @@ JavaScript scoring (it does not use AI or machine learning).
 ## Features
 
 - Home and About pages
-- Questionnaire with 9 multiple-choice questions and answer validation
+- Questionnaire with 10 multiple-choice questions and answer validation
 - Score calculation for 6 career fields
 - Top recommendation, and a second one when the scores are close
 - Tie handling and a Retake Assessment button
